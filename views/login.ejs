@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/head.ejs %>
+    <% include partials/navbar.ejs %>
+</head>
+<body>
+    <p class="container" style="font-family: consolas; font-size: 40px;">Login to Ultimate lekha page</p>
+
+    <form class="container" action="/users/login" method="post" style="font-family: consolas; padding: 40px;">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" name="username"  placeholder="user...name...">
+        </div>
+
+        <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password"  placeholder="kar ke dekho achchha lagta hai">
+        </div>
+
+        <button type="submit" class="btn btn-info">Submit</button>
+    </form>
+    <% include partials/footer.ejs %>
+    <% include partials/scripts.ejs %>
+</body>
+</html>
